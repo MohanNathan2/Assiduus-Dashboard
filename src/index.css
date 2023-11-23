@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Sidebar.css */
+.sidebar {
+  width: 175px;
+  background-color: #fff;
+  height: 100%;
+  position: fixed;
+  top: 7%;
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 20px 0px 0px 0px;
+}
+
+.sidebar li {
+  padding: 10px;
+}
+
+.sidebar a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 20px;
+    width: 100%;
+}
+
+.sidebar li:hover {
+  background-color: #0eb50e;
+}
+
+/* Update the active tab selector */
+.sidebar .active {
+  background-color: #0eb50e;
+  color: white; /* Set the text color to white for the active tab */
+}
+
+.sidebarActive .active {
+  color: white; /* Set the text color to white for the active tab */
+}
+
+.sidebar i {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+/* Rest of your styling */
+.css-10vg0a6-MuiResponsiveChart-container>svg {
+  width: initial !important;
+  height: initial !important;
+}
+
+.css-10vg0a6-MuiResponsiveChart-container {
+  height: initial !important;
+}
+
+.css-1vuxth3-MuiBarElement-root{
+  fill: #4CAF50 !important;
+}
+
+.css-156rdpn-MuiBarElement-root{
+  fill: #338036 !important;
+}
+
+.css-mt6n7l-MuiBarElement-root{
+  fill: #3991d7 !important;
+}
+.MuiChartsLegend-mark{
+  fill: #4CAF50 !important;
+}
+
+.css-1vp1vvj-MuiChartsSurface-root .MuiLineElement-root{
+  stroke: #4CAF50 !important;
+}
+
+
+.css-1cj1zx6-MuiResponsiveChart-container>svg{
+  width: initial !important;
+  height: initial !important;
+}
+.css-1cj1zx6-MuiResponsiveChart-container{
+  width: initial !important;
+  height: initial !important;
+}
+
+.css-1wxc0u1-MuiResponsiveChart-container {
+width: 500px !important;
+}
+
+.css-zylse7-MuiButtonBase-root-MuiIconButton-root{
+  color: #333 !important;
+}
+
+.css-11b3ww9-MuiPaper-root-MuiAppBar-root{
+  background-color: #fff !important;
+}
+
+.css-yz9k0d-MuiInputBase-input{
+  padding: 5px !important;
+}
+
+.fileInput{
+  font-size: 14px;
+  margin-left: 40%;
+  background-color: #dee4ff;
+  padding: 4px;
+  color: #7b8ddd;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.css-1k2u9zb-MuiChartsAxis-root .MuiChartsAxis-tickLabel{
+  fill:#aaa5a5 !important
+}
+
+.css-yz9k0d-MuiInputBase-input{
+  margin: 0px 0px 0px 30px !important;
+}
+
+@media (min-width: 768px) {
+  .App {
+    display: flex;
+    flex-direction: row;
+  }
+  .sidebar {
+    width: 175px;
+  }
+  .content {
+    flex-grow: 1;
+    padding: 80px 20px 20px 20px;
+  }
+  .fileInput {
+    margin-left: 50%;
+  }
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 767px) {
+  .App {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    position: static;
+    top: auto;
+    left: auto;
+  }
+  .content {
+    padding: 20px;
+  }
+  .fileInput {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    height: 280px;
+  }
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 767px) {
+  .card {
+    height: auto;
+  }
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 767px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.card {
+  height: 100%; /* Make sure cards fill the grid cell */
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  padding: 80px 20px 20px 200px;
+  background-color: whitesmoke;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+  .content {
+    padding: 20px; /* Adjust the padding for smaller screens */
+  }
+}
+
